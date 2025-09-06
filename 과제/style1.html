@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+
+    div#top {
+        background-color: #04AA6D;
+        border-radius: 5px;
+        color: aliceblue;
+        padding: px;
+        font-weight: bold;
+        padding: 10px 20px ;
+    }
+
+        div#top h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+
+        div#top p {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: normal;
+        }
+
+    div#middle {
+        display: flex;
+        gap: 10px;
+        margin-top: 5px ;
+
+    }
+
+        div#left {
+            width: 200px;
+            margin-top: 0px;
+        }
+            ul#menulist {
+                list-style: none;
+                border-radius: 5px;
+                color: aliceblue;
+                padding: 0px;
+            }
+
+                li#menu0 {
+                    display: block;
+                    width: 160px;
+                    padding: 5px;
+                    border-radius: 3px;
+                    color: white;
+                    text-decoration: none;
+                    background-color: #04AA6D;
+                    margin-bottom: 5px; 
+                    border: 1px solid #04AA6D;
+                }
+
+                li#menu1 {
+                    width: 160px;
+                    padding: 5px;
+                    border-radius: 3px;
+                    color: black;
+                    background-color: #f1f1f1;
+                    border: 1px solid #d4d4d4;
+                    margin-bottom: 5px;
+                }
+
+                                /* 링크 스타일 초기화 */
+                li a {
+                    color: inherit;             /* li에서 지정한 색상 따라감 */
+                    text-decoration: none;      /* 밑줄 제거 */
+                    display: block;             /* 클릭 영역을 li 전체로 확장 */
+                    width: 100%;
+                    height: 100%;
+                }
+
+        div#center {
+            flex: 1;
+            
+        }
+
+        div#SideBar {
+            width: 180px;
+            color: white;
+            background-color: #32a4e7;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 5.5px;
+            margin-bottom: 10px;
+        }
+
+        div#SideBar h3 {
+            font-weight: 900;
+        }
+
+    div#bottom {
+        border: 1px solid #d4d4d4;
+        border-radius: 5px;
+        background-color: #f1f1f1;
+        padding: 0.1px 15px;
+    }
+
+    div#bottom p {
+        font-size: 0.8rem;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="top">
+        <h1>Welcome to My Homepage</h1>
+        <p>Use the menu to select different Stylesheets</p>
+    </div>
+
+    <div id="middle">
+        <div id="left">
+            <ul id="menulist">
+                <li id="menu0"><a href="stylesheet1.html"><b>Stylesheet 1</b></a></li>
+                <li id="menu1">Stylesheet 2</li>
+                <li id="menu1"><a href="stylesheet33.html">Stylesheet 3</a></li>
+                <li id="menu1">Stylesheet 4</li>
+                <li id="menu1"><a href="nostyle.html">No Stylesheet</a></li>
+            </ul>
+        </div>
+
+        <div id="center">
+            <h1>Same Page Different Stylesheets</h1>
+            <p> This is a demonstration of how different stylesheets can change the layout of your HTML page. You can
+                change
+                the
+                layout of this page by selecting different stylesheets in the menu, or by selecting one of the following
+                links:
+                <br />
+                <a href="stylesheet1.html"> Stylesheet1 </a>,
+                <a href="stylesheet1.html"> Stylesheet2 </a>,
+                <a href="stylesheet3.html"> Stylesheet3 </a>,
+                <a href="stylesheet33.html"> Stylesheet4 </a>
+            </p>
+
+            <h2>No Styles</h2>
+            <p>
+                This page uses DIV elements to group different sections of the HTML page. Click here to see how the page
+                looks
+                like
+                with no stylesheet: <br />
+                <a href="nostyle.html"> No Stylesheet.</a>
+            </p>
+
+        </div>
+
+            <div id="SideBar">
+                <h3>Side-Bar</h3>
+
+                <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet
+                    dolore
+                    magna aliquam erat volutpat. </p>
+
+            </div>
+    </div>
+
+
+        <div id="bottom">
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet
+                dolore magna aliquam erat volutpatUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                suscipit
+                lobortis
+                nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                esse
+                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                dignissim
+                qui
+                blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            </div>
+
+</body>
+
+</html>
